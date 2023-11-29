@@ -74,10 +74,12 @@
         }
     }
 
-    @media screen and (max-width: 680px){
+    @media screen and (max-width: 768px){
         .sec_1{
+            margin-top: 50px;
             flex-direction: column;
             height: 420px;
+            align-items: center;
         }
             .sec_1 article{
                 width: 100%;
