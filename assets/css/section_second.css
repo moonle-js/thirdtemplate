@@ -1,0 +1,65 @@
+.sec_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    margin-top: 5vh;
+}
+.sec_2 *{
+    transition: .4s all ease
+}
+    .sec_2 h2{
+        color: var(--black_text);
+        font-family: "Montserrat";
+        font-size: 1.5em;
+        font-style: normal;
+        font-weight: 900;
+        margin: 20px auto 50px auto;
+        line-height: 196.187%; 
+    }
+        .sec_2 div.catalog{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            min-height: 300px;
+        }
+            .sec_2 div.catalog div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                height: 30%;
+                min-height: 75px;
+                background: var(--white_text);
+                box-shadow:  0px 4px 11px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+            }
+            .sec_2 div.catalog div:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            .sec_2 div.catalog div:hover span{
+                font-size: 1.5em;
+            }
+                .sec_2 div.catalog div span{
+                    color: var(--, #241400);
+                    font-family: "Montserrat";
+                    font-size: 1em;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 196.187%;
+                }
+
+        @media screen and (max-width: 768px){
+            .sec_2 div.catalog{
+                min-height: 800px;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .sec_2 div.catalog div{
+                width: 80%;
+            }
+        }
