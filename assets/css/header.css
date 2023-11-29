@@ -1,4 +1,5 @@
 header{
+    position: relative;
     max-width: 1300px;
     width: 90%;
     margin: 0 auto;
@@ -22,7 +23,7 @@ header *{
             width: 100%;
             height: 100%;
         }
-            header nav ul li:nth-child(1){
+            header nav ul li#first{
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -30,7 +31,7 @@ header *{
                 height: 100%;
                 max-width: 180px;
             }
-                header nav ul li:nth-child(1) a{
+                header nav ul li#first a{
                     display: flex;
                     column-gap: 5px;
                     text-decoration: none;
@@ -39,20 +40,20 @@ header *{
                     width: 100%;
                     height: 100%;
                 }
-                header nav ul li:nth-child(1) a:hover{
+                header nav ul li#first a:hover{
                     color: var(--orange_text);
                 }
-                    header nav ul li:nth-child(1) a img{
+                    header nav ul li#first a img{
                         width: 42px;
                         height: 42px;
                     }
-                    header nav ul li:nth-child(1) a div.header_logo_text{
+                    header nav ul li#first a div.header_logo_text{
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         justify-content: center;
                     }
-                        header nav ul li:nth-child(1) a div.header_logo_text .header_logo_text_first{
+                        header nav ul li#first a div.header_logo_text .header_logo_text_first{
                             color: var(--red_text);
                             font-family: "Montserrat";
                             font-size: 1em;
@@ -61,14 +62,14 @@ header *{
                             line-height: normal;
                             text-transform: uppercase;
                         }
-                        header nav ul li:nth-child(1) a div.header_logo_text .header_logo_text_first::after{
+                        header nav ul li#first a div.header_logo_text .header_logo_text_first::after{
                             display: block;
                             content: " ";
                             width: 100px;
                             height: 1px;
                             background: var(--black);
                         }
-                        header nav ul li:nth-child(1) a div.header_logo_text .header_logo_text_second{
+                        header nav ul li#first a div.header_logo_text .header_logo_text_second{
                             color: var(--, #241400);
                             font-family: "Montserrat";
                             font-size: 0.95em;
@@ -87,7 +88,7 @@ header *{
         }
             header nav ul li:nth-child(2) ul{
                 display: flex;
-                column-gap: 20px;
+                column-gap: 10px;
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
@@ -99,6 +100,7 @@ header *{
                     justify-content: center;
                     align-items: center;
                     text-align: center;
+                    border: 2px solid red;
                 }
                     header nav ul li:nth-child(2) ul li a{
                         color: var(--, #241400);
@@ -134,4 +136,24 @@ header *{
             }
             header nav ul li:nth-child(3) p a:hover{
                 color: var(--orange_text);
+            }
+
+            .span_ham{
+                width: 20px;
+                height: 3px;
+                background: #000;
+            }
+            header nav ul li:nth-child(3) div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 50px;
+                height: 25px;
+            }
+
+            @media screen and (max-width:768px){
+                header nav ul li:nth-child(2){
+                    display: none;
+                }
             }

@@ -1,6 +1,5 @@
 .sec_1{
     margin-top: 150px;
-    min-height: 600px;
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -33,8 +32,7 @@
             line-height: 196.187%; 
         }
         .sec_1 article button{
-            max-width: 200px;
-            width: 80%;
+            width: 200px;
             background-color: var(--orange_background);
             color: var(--white_text);
             min-height: 50px;
@@ -50,8 +48,7 @@
     .sec_1 .right_side{
         width: 50%;
         max-width: 630px;
-        min-height: 488px;
-        height: 100%;
+        height: 488px;
         background: url(../images/Section_one_fone.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -77,9 +74,30 @@
         }
     }
 
-    @media screen and (max-width: 880px){
+    @media screen and (max-width: 680px){
+        .sec_1{
+            flex-direction: column;
+            height: 420px;
+        }
+            .sec_1 article{
+                width: 100%;
+                align-items: center;
+            }
+                .sec_1 article h1, .sec_1 article p, .sec_1 article button{
+                    width: 100%;
+                }
 
+            .sec_1 .right_side{
+                height: 200px;
+                width: 80%;
+                position: relative;
+            }
+        
         .sec_1 .right_side img{
-            height: 200px;
+            height: 70%;
+            position: absolute;
+            width: 80%;
+            max-width: 270px;
+            left: 5%;
         }
     }
