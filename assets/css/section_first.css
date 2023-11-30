@@ -1,6 +1,6 @@
 .sec_1{
     margin-top: 150px;
-    height: 600px;
+    min-height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
