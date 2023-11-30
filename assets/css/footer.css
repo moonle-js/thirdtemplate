@@ -1,0 +1,267 @@
+footer{
+    position: relative;
+    color: var(--white_text);
+    width: 100%;
+    min-height: 270px;
+    background: var(--footer_background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px 10px 20px;
+    align-items: center;
+    margin-top: 10vh;
+}
+    footer nav{
+        width: 90%;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        footer nav ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+            footer nav ul li{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 20px;
+                justify-content: flex-start;
+                height: 100%;
+                width: 20%;
+            }
+                footer nav ul li span{
+                    color: var(--white_text);
+                    font-family: "Montserrat";
+                    font-size: 1em;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%;
+                }
+                footer nav ul li span.list_first_description{
+                    color: var(--white_text);
+                    font-family: "Montserrat";
+                    font-size: 1.4em;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 100%;
+                }
+            
+            footer nav ul li#firstt{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+                min-height: 100%;
+                max-width: 300px;
+            }
+                footer nav ul li#firstt a{
+                    display: flex;
+                    column-gap: 5px;
+                    text-decoration: none;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
+                footer nav ul li#firstt a:hover{
+                    color: var(--orange_text);
+                }
+                    footer nav ul li#firstt a img{
+                        width: 42px;
+
+                        height: 42px;
+                    }
+                    footer nav ul li#firstt a div.header_logo_text{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                    }
+                        footer nav ul li#firstt a div.header_logo_text .header_logo_text_first{
+                            color: var(--white_text);
+                            font-family: "Montserrat";
+                            font-size: 1em;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: normal;
+                            text-transform: uppercase;
+                        }
+                        footer nav ul li#firstt a div.header_logo_text .header_logo_text_first::after{
+                            display: block;
+                            content: " ";
+                            width: 100px;
+                            height: 1px;
+                            background: var(--white_text);
+                        }
+                        footer nav ul li#firstt a div.header_logo_text .header_logo_text_second{
+                            color: var(--white_text);
+                            font-family: "Montserrat";
+                            font-size: 0.95em;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 100%;
+                        }
+            footer nav ul li:nth-child(2){
+                margin-left: auto;
+            }
+
+    footer small{
+        color: var(--white_text);
+        font-family: "Montserrat";
+        font-size: 0.9em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 196.187%;
+    }
+/* Absolute side */
+    .absolute{
+        display: none;
+    }
+
+
+@media screen and (max-width:768px){
+    footer nav, footer small{
+        display: none;
+    }
+    footer{
+        height: 220px;
+        padding: 20px;
+        padding-top: 40px;
+    }
+
+
+    .absolute{
+        color: var(--white_text);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .absolute .absolute_up{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+            .absolute .absolute_up a{
+                color: var(--white_text);
+                text-decoration: none;
+                display: flex;
+                column-gap: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+            .absolute .absolute_up a{
+                display: flex;
+                column-gap: 5px;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            .absolute .absolute_up a:hover{
+                color: var(--orange_text);
+            }
+            .absolute .absolute_up a img{
+                    width: 80px;
+                    height: 80px;
+                }
+                .absolute .absolute_up a div.absolute_logo_text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+                .absolute .absolute_up a div.absolute_logo_text .absolute_logo_text_first{
+                        color: var(--white_text);
+                        font-family: "Montserrat";
+                        font-size: 1em;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        text-transform: uppercase;
+                    }
+                    .absolute .absolute_up a div.absolute_logo_text .absolute_logo_text_first::after{
+                        display: block;
+                        content: " ";
+                        width: 100px;
+                        height: 1px;
+                        background: var(--white_text);
+                    }
+                    .absolute .absolute_up a div.absolute_logo_text .absolute_logo_text_second{
+                        color: var(--, #241400);
+                        font-family: "Montserrat";
+                        font-size: 0.95em;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 100%;
+                    } 
+
+
+
+        .absolute .absolute_middle{
+            width: 100%;
+            height: 80px;
+            color: var(--white_text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .absolute .absolute_middle .nav, .absolute .absolute_middle .nav ul{
+                width: 100%;
+                height: 100%;
+            }
+                .absolute .absolute_middle .nav ul{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                } 
+                    .absolute .absolute_middle .nav ul li a{
+                        color: var(--white_text);
+                        font-family: "Montserrat";
+                        font-size: 0.8em;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 196.187%;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+
+
+
+        .absolute .absolute_low{
+            height: 60px;
+        }
+        .absolute .absolute_low::before{
+            margin-bottom: 20px;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: gray;
+
+        }
+            .absolute .absolute_low p{
+                color: var(--white_text);
+                text-align: center;
+                font-family: "Montserrat";
+                font-size: 1em;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+
+}
+
+
+
