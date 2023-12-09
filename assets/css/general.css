@@ -1,7 +1,9 @@
 body{
     font-size: 14px;
     background: var(--body_background);
+    position: relative;
 }
+
 section{
     max-width: 1300px;
     width: 90%;

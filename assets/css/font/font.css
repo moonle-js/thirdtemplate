@@ -8,3 +8,10 @@
     src: url(../../fonts/Roboto/Roboto-Regular.ttf),
             url(../../fonts/Roboto/Roboto-Bold.ttf);
 }
+@font-face {
+    font-family: "Grimson";
+    src: url(../../fonts/Crimson_Text/CrimsonText-Regular.ttf),
+            url(../../fonts/Crimson_Text/CrimsonText-Bold.ttf),
+            url(../../fonts/Crimson_Text/CrimsonText-BoldItalic.ttf),
+            url(../../fonts/Crimson_Text/CrimsonText-SemiBold.ttf);
+}

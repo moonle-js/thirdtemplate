@@ -101,6 +101,9 @@ header *{
                     align-items: center;
                     text-align: center;
                 }
+                header nav ul li:nth-child(2) img{
+                    display: none;
+                }
                     header nav ul li:nth-child(2) ul li a{
                         font-family: "Montserrat";
                         font-size: 0.8em;
@@ -152,6 +155,9 @@ header *{
             
 
             @media screen and (max-width:768px){
+                header{
+                    margin-bottom: 50px;
+                }
                 
                 header nav ul li:nth-child(3) p{
                     display: none;
@@ -173,22 +179,44 @@ header *{
                     left: 0;
                     right: 0;
                     top: 60px;
-                    min-width: 300px;
                     margin-left: auto;
                     display: none;
                     margin-left: auto;
+                    min-width: 100%;
                     margin-right: auto;
+                    min-height: 180px;
+                    border-top: 2px solid gray;
+                    border-bottom: 2px solid gray;
+                    padding-top: 5px;
                 }
+                    
                     .second_list ul{
                         flex-direction: column;
+                        justify-content: space-evenly;
+                        align-items: flex-start;
+                        column-gap: 20px;
+                        max-width: 60%;
+                        min-height: 150px;
+                    }
+                    #links ul li{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
                         width: 100%;
+                        height: 100%;
                     }
                         #links ul li a{
-                            min-width: 200px;
                             line-height: 20px;
                             padding: 0;
-                            font-size: 1.2em;
+                            font-size: 1.1em;
                         }
+
+                .second_list img{
+                    max-width: 40%;
+                    display: inline-block;
+                    width: 40%;
+                    padding: 50px;
+                }
 
                
             }
