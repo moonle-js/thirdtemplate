@@ -125,7 +125,11 @@ header *{
             height: 100%;
             column-gap: 5px;
         }
-            header nav ul li:nth-child(3) p a{
+        header nav ul li:nth-child(3) img{
+            cursor: pointer;
+        }
+            header nav ul li:nth-child(3) p{
+                cursor: pointer;
                 color: var(--, #241400);
                 font-family: "Roboto";
                 font-size: 14px;
