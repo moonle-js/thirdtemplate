@@ -76,10 +76,19 @@
         background: rgba(24, 14, 0, 0.9);
     }
     .join_us form{
+        justify-content: space-evenly;
         width: 80%;
         height: 50%;
     }
         .join_us form p{
             width: 90%;
+            font-size: 1.8em;
+        }
+        .join_us form input, .join_us form button{
+            height: 50px;
+            font-size: 1em;
+        }
+        .join_us form button{
+            margin: 10px;
         }
 }
