@@ -85,6 +85,9 @@
                 width: 100%;
                 align-items: center;
             }
+            .sec_1 article h1{
+                font-size: 1.6em;
+            }
                 .sec_1 article h1, .sec_1 article p, .sec_1 article button{
                     width: 100%;
                 }
