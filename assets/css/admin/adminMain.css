@@ -1,0 +1,74 @@
+body{
+    background: var(--red_text);
+}
+header{
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2vh;
+    min-height: 44px;
+}
+header *{
+    transition: .4s all ease;
+}
+    header nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        header nav ul{
+            width: 100%;
+            height: 100%;
+        }
+            header nav ul li{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: flex-start;
+            }   
+                header nav ul li a{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    column-gap: 20px;
+                    height: 100%;
+                    color: var(--white_text);
+                    text-decoration: none;
+                }
+                header nav ul li a .header_logo_text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    height: 100%;
+                }
+                    header nav ul li a .header_logo_text .header_logo_text_first{
+                        color: var(--white_text);
+                        font-family: "Montserrat";
+                        font-size: 1em;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 2em;
+                        text-transform: uppercase;
+                        height: 50%;
+                    }
+                    header nav ul li a .header_logo_text .header_logo_text_first:after{
+                        display: block;
+                        content: " ";
+                        background: var(--white_text);
+                        width: 200%;
+                        height: 2px;
+                    }
+                    header nav ul li a .header_logo_text .header_logo_text_second{
+                        color: var(--white_text);
+                        font-family: "Montserrat";
+                        font-size: 0.9em;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 2em;
+                        text-transform: capitalize;
+                        height: 50%;
+                    }
+/* Styling of section with form */
