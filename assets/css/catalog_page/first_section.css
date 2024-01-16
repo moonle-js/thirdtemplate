@@ -180,6 +180,7 @@
 
 .sec_2 .sec_2_header{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -193,3 +194,27 @@
         font-weight: 900;
         line-height: 196.187%;
     }
+
+
+    /* Left and right buttons */
+
+.move_buttons{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    border-top: 2px solid purple;
+    border-right: 2px solid purple;
+}
+
+#secondCatalogLeft{
+    position: absolute;
+    left: 10%;
+    transform: rotateZ(-135deg);
+}
+#secondCatalogRight{
+    transform: rotateZ(45deg);
+    right: 10%;
+    position: absolute;
+}
