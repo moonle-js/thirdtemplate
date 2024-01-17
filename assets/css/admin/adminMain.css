@@ -5,7 +5,7 @@ header{
     max-width: 1300px;
     width: 90%;
     margin: 0 auto;
-    margin-top: 2vh;
+    margin-top: 4vh;
     min-height: 44px;
 }
 header *{
@@ -72,3 +72,67 @@ header *{
                         height: 50%;
                     }
 /* Styling of section with form */
+
+main{
+    width: 100%;
+    height: 90vh;
+} 
+    main section{
+        padding-top: 10vh;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+        main section .form{
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 662px;
+            width: 90%;
+            max-height: 545px;
+            height: 80%;
+            background-color: var(--white_text);
+        }
+            main section .form h1{
+                color: var(--black_text);
+                text-align: center;
+                font-family: "Montserrat";
+                font-size: 2.1em;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+            }
+            main section .form input{
+                max-width: 550px;
+                width: 90%;
+                height: 75px;
+                color: var(--gray_text);
+                border: 1px solid var(--gray_text);
+                outline: none;
+                padding-left: 50px;
+                font-family: "Grimson";
+                font-size: 1.2em;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                outline: none;
+            }
+            main section .form button{
+                background-color: var(--orange_text);
+                max-width: 550px;
+                width: 90%;
+                height: 75px;
+                outline: none;
+                color: var(--white_text);
+                border: none;
+                font-family: "Grimson";
+                font-size: 1.3em;
+                font-weight: 700;
+                line-height: normal;
+                cursor: pointer;
+            }
