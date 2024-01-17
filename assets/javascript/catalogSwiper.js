@@ -25,12 +25,9 @@ var array = [
         'index'     :   4,
     },
 ]
-
-
-
-var message = array.filter(a => a.index < 3).map( a => `
+var firstMessage = array.filter(a => a.index < 3).map( a => `
         <div class="book">
-        <img src="${a.link}" alt="book_one">
+        <img class='book_image' src="${a.link}" alt="book_one">
         <p class="book_name">
             ${a.name}
         </p>
@@ -39,10 +36,79 @@ var message = array.filter(a => a.index < 3).map( a => `
         </button>
         </div>
 `).join('');
+
+var message = array.filter(a => a.index < 3).map( a => `
+        <div class="book">
+        <img class='book_image' src="${a.link}" alt="book_one">
+        <p class="book_name">
+            ${a.name}
+        </p>
+        <button>
+            Read more
+        </button>
+        </div>
+`).join('');
+
 document.querySelector('#secondCatalog').innerHTML = message;
+document.querySelector('#firstCatalog').innerHTML = message;
 
 
 var newArr = array.filter(a => a.index < 3).map(a => a);
+var firstnewArr = array.filter(a => a.index < 3).map(a => a);
+
+document.querySelector('#firstCatalogLeft').onclick = function(){
+    if((firstnewArr[firstnewArr.length-1].index) !== array[array.length - 1].index){
+        firstnewArr.shift();
+        firstnewArr.push(array[firstnewArr[firstnewArr.length-1].index+1]);
+    }
+
+    // ------------------
+    var firstMessage = firstnewArr.map( a => `
+        <div class="book">
+        <img class='book_image' src="${a.link}" alt="book_one">
+        <p class="book_name">
+            ${a.name}
+        </p>
+        <button>
+            Read more
+        </button>
+        </div>
+`).join('');
+
+
+document.querySelector('#firstCatalog').innerHTML = firstMessage;
+}
+
+document.querySelector('#firstCatalogRight').onclick = function(){
+    if(firstnewArr[0].index !== array[0].index){
+        firstnewArr.pop();
+        firstnewArr.unshift(array[firstnewArr[0].index-1]);
+    }
+
+    // -----------------
+    var firstMessage = firstnewArr.map( a => `
+        <div class="book">
+        <img class="book_image" src="${a.link}" alt="book_one">
+        <p class="book_name">
+            ${a.name}
+        </p>
+        <button>
+            Read more
+        </button>
+        </div>
+`).join('');
+
+
+document.querySelector('#firstCatalog').innerHTML = firstMessage;
+}
+
+
+
+
+
+
+
+
 
 // Onclick when clicking left
 
@@ -55,7 +121,7 @@ document.querySelector('#secondCatalogLeft').onclick = function(){
     // ------------------
     var message = newArr.map( a => `
         <div class="book">
-        <img src="${a.link}" alt="book_one">
+        <img class='book_image' src="${a.link}" alt="book_one">
         <p class="book_name">
             ${a.name}
         </p>
@@ -80,7 +146,7 @@ document.querySelector('#secondCatalogRight').onclick = function(){
     // -----------------
     var message = newArr.map( a => `
         <div class="book">
-        <img src="${a.link}" alt="book_one">
+        <img class="book_image" src="${a.link}" alt="book_one">
         <p class="book_name">
             ${a.name}
         </p>
